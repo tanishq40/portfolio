@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel ="Stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/f9ed21ec8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+   <div class = "container">
+    <nav>
+        <img src="images/logo.png"class = "logo">
+        <ul id ="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+              <p> Software Developer</p>
+              <h1> Hi, I'm <span>Tanishq</span> Shukla </h1>
+    </div>
+    </div>
+    </div>
+<!-- ----------------------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "images/user.jpg">
+            </div>
+            <div class="about-col-2">
+               <h1 class ="sub-title">About Me</h1>
+               <p>I am a Passionate Software Engineer with expertise in problem-solving and algorithms thinking I love to explore various technologies and framework to develop efficient and scalable solution with a strong foundation in data structure and algorithm,I strive to create robust and optimized code .I am constantly expanding my skills and staying up to date with the latest advancement in the field of software development</p>
+               <div class="tab-titles"> 
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span> Software Developer</span><br>Data Structure and Algorithm</li>
+                    <li><span> Web Development</span><br>Web App Development</li>
+                    <li><span> App Development</span><br>Building Android/iOS apps</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id ="projects">
+                <ul>
+                    <li><span> Raspberry Pi (IOT)</span><br>Stampede Prevention System</li>
+                    <li><span> Programming language</span><br>Bank Management System</li>
+                    <li><span> Frontend Development</span><br>Weather Detection App</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id = "education">
+                <ul>
+                    <!-- <li><span> 2029</span><br>Phd from IIIT,Prayagraj</li> -->
+                    <li><span> 2025</span><br>MCA from RBU,Nagpur</li>
+                    <li><span> 2023</span><br>B.SC(IT) from CSJMU,Kanpur</li>
+                    <li><span> 2018</span><br>Intermediate</li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------services----------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class ="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web Development is the practice of developing websites and web apps that live on the internet. Whether you’re interested in front-end, back-end, or going full-stack, our web development courses will help you get there. It is the creation of an application that works over the internet i.e.websites.Web developers create functional, user-friendly websites and web applications.</p>
+                <a href="https://www.geeksforgeeks.org/web-development/"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Data Structure and Algorithm</h2>
+                <p>Data Structures and Algorithms refer to the study of methods for organizing and storing data and the design of procedures for solving problems, which operate on these data structures. DSA is one of the most important skills that every computer science student must have crack the interviews of almost every tech giant.</p>
+                <a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.Mobile app development is rapidly growing. From retail, telecommunications and e-commerce to insurance, healthcare and government,convenient ways to conduct transactions and access information.</p>
+                <a href="https://www.ibm.com/topics/mobile-application-development"> Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------portfolio------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class ="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Stampede Prevention System</h3>
+                    <p>Designed and developed an intelligent Stampede Prevention System aimed at enhancing safety in crowded events. This system utilizes real-time crowd density analysis and predictive algorithms to monitor and manage crowd movements effectively. By integrating advanced sensors and machine learning, it can detect early signs of potential stampedes and trigger automated alerts and control measures to prevent incidents, ensuring the safety and well-being of all attendees.</p>
+                    <a href="https://github.com/tanishq40?tab=repositories"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Bank Management System</h3>
+                    <p>Developed and implemented a comprehensive Bank Management System designed to streamline banking operations and enhance customer experience. The system features robust functionalities for managing accounts, transactions, loans, and customer information. Utilized modern technologies and best practices to ensure security, scalability, and efficiency.</p>
+                    <a href="https://github.com/tanishq40?tab=repositories"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Weather Detection App</h3>
+                    <p>WeatherSense is a cutting-edge weather detection application designed to provide users with real-time weather updates and forecasts. Leveraging advanced meteorological data sources and machine learning algorithms, WeatherSense offers accurate and personalized weather information tailored to your location. Key features include interactive radar maps, severe weather alerts, and daily forecasts to help users plan their activities with confidence. </p>
+                    <a href="https://github.com/tanishq40?tab=repositories"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>            
+            </div>
+       <a href="https://github.com/tanishq40?tab=repositories" class ="btn">See more</a>
+    </div>
+</div>
+<!-- -------------------------contact------------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tanishqshukla40@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6394460044</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/tanishq.shukla.31/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/TanishqShukla91"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/tanishqshukla1947/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tanishq-shukla-235675273"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/tanishq40"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <div>
+                    <a href="images/my-cv.pdf"download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+           
+            <div class="contact-right">
+            <form name ="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>  
+            </form>
+            <span id ="msg"></span>   
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>copyright © Tanishq. Made with <i class="fa-solid fa-heart"></i> by Shukla</p>
+    </div>
+</div>
+
+
+<!-- --------------------------script------------------------------ -->
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tablink of tabcontents){
+        tablink.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4TslIY7sZubZE9ywpCia-BEx5LSOLBGpBGZuRdXs9M7ox1keFm3k3VZK1PDm6vxeE/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHtml = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+</body>
+</html>
